@@ -1,8 +1,13 @@
-import { Container, Logo, Image, SocialLinks } from "./styles";
+import {
+  Container,
+  Logo,
+  Image,
+  SocialLinks,
+  GitHubIcon,
+  LinkedInIcon,
+} from "./styles";
 
 import logo from "../../assets/paw.png";
-import gitHub from "../../assets/Octocat.png";
-import linkedIn from "../../assets/linkedin.png";
 
 function Header() {
   return (
@@ -12,11 +17,11 @@ function Header() {
         <h1>Cat facts</h1>
       </Logo>
       <SocialLinks>
-        <a href="https://github.com/igordeoliveira95">
-          <Image hover={true} src={gitHub} alt="GitHub" />
+        <a href="https://github.com/igordeoliveira95" target="_blank">
+          <GitHubIcon />
         </a>
-        <a href="https://www.linkedin.com/in/igordeoliveira1/">
-          <Image hover={true} src={linkedIn} alt="LinkedIn" />
+        <a href="https://www.linkedin.com/in/igordeoliveira1/" target="_blank">
+          <LinkedInIcon />
         </a>
       </SocialLinks>
     </Container>

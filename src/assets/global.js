@@ -1,14 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-  :root {
-    --background: #FFFFFF;
-  }
-
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
   }
 
   html {
@@ -22,6 +19,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    background: #FFFFFF;
     background-image: "../assets/yoda_and_aurora.jpg";
     background: var(--background);
     -webkit-font-smoothing: antialiased;
@@ -31,4 +29,4 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
   }
-`
+`;
