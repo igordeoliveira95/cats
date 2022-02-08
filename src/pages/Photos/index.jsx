@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
 import Header from "../../components/Header";
+import {CatButton, PawIcon} from "../../components/CatButton";
 import { Container, Image, ImageContainer, Loading } from "./styles";
-import { CatButton, PawIcon } from "../Facts/styles";
 import loadingGif from "../../assets/loading.gif";
 
 const axios = require("axios");
@@ -35,7 +35,7 @@ function Photos() {
           {isLoading ? <Loading src={loadingGif} /> : <Image src={catPhoto} />}
         </ImageContainer>
         <CatButton onClick={() => getPhoto()}>
-          <PawIcon />
+          <PawIcon/>
         </CatButton>
       </Container>
     </>

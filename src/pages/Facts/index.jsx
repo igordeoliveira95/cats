@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 
 import Header from "../../components/Header";
+import {CatButton, PawIcon} from "../../components/CatButton";
 import {
   Container,
-  CatButton,
-  PawIcon,
   FactContainer,
   PreviousFactsContainer,
   PreviousFactsList,
@@ -39,7 +38,7 @@ function Facts() {
       <Container>
         <FactContainer>{fact.fact}</FactContainer>
         <CatButton onClick={() => getFact()}>
-          <PawIcon />
+          <PawIcon/>
         </CatButton>
         <PreviousFactsContainer>
           {previousFacts.map((fact) => {

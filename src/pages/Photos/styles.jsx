@@ -11,6 +11,9 @@ export const ImageContainer = styled.div`
   align-items: center;
   width: auto;
   height: 500px;
+  @media (max-width: 720px) {
+    max-width: 320px;
+  }
 `;
 
 export const Image = styled.img`
