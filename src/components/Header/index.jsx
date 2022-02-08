@@ -5,8 +5,9 @@ import {
   SocialLinks,
   GitHubIcon,
   LinkedInIcon,
+  NavMenu,
+  StyledLink,
 } from "./styles";
-
 import logo from "../../assets/paw.png";
 
 function Header() {
@@ -14,8 +15,12 @@ function Header() {
     <Container>
       <Logo>
         <Image src={logo} alt="Cat paw" />
-        <h1>Cat facts</h1>
+        <h1>Cats</h1>
       </Logo>
+      <NavMenu>
+        <StyledLink to="/">Facts</StyledLink>
+        <StyledLink to="/photos">Photos</StyledLink>
+      </NavMenu>
       <SocialLinks>
         <a href="https://github.com/igordeoliveira95" target="_blank">
           <GitHubIcon />
