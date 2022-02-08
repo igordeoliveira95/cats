@@ -27,6 +27,12 @@ export const Container = styled.header`
 
 export const Logo = styled.div`
   display: flex;
+  @media (max-width: 720px) {
+    width: 10%;
+    h1 {
+      opacity: 0%;
+    }
+  }
 `;
 
 export const Image = styled.img`
@@ -40,6 +46,11 @@ export const NavMenu = styled.nav`
   width: 20%;
   height: 50%;
   color: #d6d6d6;
+  @media (max-width: 720px) {
+    font-size: 16px;
+    width: 40%;
+    justify-content: start;
+  }
 `;
 
 export const StyledLink = styled(Link)`
@@ -73,10 +84,4 @@ export const GitHubIcon = styled(FaGithubAlt)`
 
 export const LinkedInIcon = styled(BsLinkedin)`
   ${icons}
-`;
-
-export const BottomMenu = styled.div`
-  @media (max-width: 720px) {
-    height: 30%;
-  }
 `;
